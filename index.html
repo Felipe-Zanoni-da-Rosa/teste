@@ -1,26 +1,9 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Download do Arquivo</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
-</head>
-<body>
-    <button onclick="downloadFile()">Download do Arquivo</button>
-
-    <script>
-        function downloadFile() {
-            var filename = 'Chereck.txt';
-            var fileContent = 'Chereck.txt';
-            var zip = new JSZip();
-            zip.file(filename, fileContent);
-            zip.generateAsync({ type: 'blob' })
-                .then(function (blob) {
-                    var link = document.createElement('a');
-                    link.href = URL.createObjectURL(blob);
-                    link.download = 'arquivo.zip';
-                    link.click();
-                    URL.revokeObjectURL(link.href);
-                })}
-    </script>
-</body>
+<html lang="en" lang="en">
+    <head>
+<title>TESTE</title>
+    </head>
+    <body>
+       <a href="/Chereck.txt" download="/Chereck.txt"><button>Dawnload</button></a> 
+    </body>
 </html>
