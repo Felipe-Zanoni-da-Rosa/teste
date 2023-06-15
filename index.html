@@ -9,8 +9,8 @@
 
     <script>
         function downloadFile() {
-            var filename = 'O CAMINHO PARA O ARQUIVO';
-            var fileContent = 'O CAMINHO PARA O ARQUIVO';
+            var filename = 'Chereck.txt';
+            var fileContent = 'Chereck.txt';
             var zip = new JSZip();
             zip.file(filename, fileContent);
             zip.generateAsync({ type: 'blob' })
